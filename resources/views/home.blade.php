@@ -62,7 +62,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-uppercase mb-1">Today Meal Rate</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ number_format($currentMonthTotalBazar / $currentMonthTotalMeal) .' /=' }}</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $currentMonthTotalBazar > 0 && $currentMonthTotalMeal > 0 ? number_format($currentMonthTotalBazar / $currentMonthTotalMeal) .' /=' : 0 }}</div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-money-bill-wave-alt fa-2x text-warning"></i>
